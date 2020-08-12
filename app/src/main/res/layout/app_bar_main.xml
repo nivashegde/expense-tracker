@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.csulb.expensetracker.MainActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".MainActivity">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/bbb"
+            android:layout_marginTop="0dp">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+
+                        <TextView
+                            android:id="@+id/dailysaving"
+                            android:layout_width="0dp"
+                            android:layout_height="200dp"
+                            android:layout_margin="12dp"
+                            android:layout_weight="0.5"
+                            android:background="#e0f0ea"
+                            android:fontFamily="@font/roboto_bold"
+                            android:gravity="center"
+                            android:padding="12dp"
+                            android:text="Your Daily Savings"
+                            android:textColor="#732323"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/annualsaving"
+                            android:layout_width="0dp"
+                            android:layout_height="200dp"
+                            android:layout_margin="12dp"
+                            android:layout_weight="0.5"
+                            android:background="#e0f0ea"
+                            android:fontFamily="@font/roboto_bold"
+                            android:gravity="center"
+                            android:padding="12dp"
+                            android:text="Your Annual Savings"
+                            android:textColor="#732323"
+                            android:textSize="18dp" />
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="158dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="12dp"
+                        android:background="#FAE2E3"
+                        android:fontFamily="@font/roboto_bold"
+                        android:onClick="gotoAddExpense"
+                        android:padding="12dp"
+                        android:text="Add Expense"
+                        android:textColor="#732323"
+                        android:textSize="17dp" />
+
+                    <Button
+                        android:id="@+id/checkexpense"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="12dp"
+                        android:background="#FAE2E3"
+                        android:onClick="checkExpense"
+                        android:padding="12dp"
+                        android:text="Check Expense"
+                        android:textColor="#732323"
+                        android:textSize="17dp" />
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "630264513643",
+    "firebase_url": "https://expensetracker-8bab6.firebaseio.com",
+    "project_id": "expensetracker-8bab6",
+    "storage_bucket": "expensetracker-8bab6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:630264513643:android:549fd9054e82bc38eb5d2e",
+        "android_client_info": {
+          "package_name": "com.csulb.expensetracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "630264513643-5v1r56dv5sgrj3730es95e80rtdcuaap.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4PclSvOOX4FCOlH-qyz8t3k8V3qdSXTE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "630264513643-5v1r56dv5sgrj3730es95e80rtdcuaap.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

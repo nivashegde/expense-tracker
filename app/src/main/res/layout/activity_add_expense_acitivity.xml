@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.csulb.expensetracker.main.AddExpenseAcitivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="Add Expense"
+        android:textAlignment="center"
+        android:background="@color/white"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/black"
+        android:elevation="5dp"
+        android:textSize="22sp" />
+
+    <!--spinner area-->
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/expenselist"
+        android:background="#FFFFFF"
+        android:layout_margin="12dp"></Spinner>
+
+
+    <EditText
+        android:id="@+id/price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:background="#FFFFFF"
+        android:hint="Price"
+        android:padding="12dp"
+        android:textColor="#000"
+        android:textSize="17dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="12dp"
+        android:background="#FFD5D5"
+        android:onClick="AddingExpense"
+        android:padding="12dp"
+        android:text="Add Expense"
+        android:textColor="#000"
+        android:textSize="17dp" />
+
+
+</LinearLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f3e5f5"
+    tools:context="com.csulb.expensetracker.navigation.SettingsActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="Plan your Budget!"
+        android:textAlignment="center"
+        android:background="@color/white"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/black"
+        android:elevation="5dp"
+        android:textSize="22sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#e0f0ea"
+                android:ems="10"
+                android:fontFamily="@font/roboto_italic"
+                android:gravity="center"
+
+                android:padding="8dp"
+                android:text="Help control your spending"
+                android:textColor="#732323"
+
+                android:textSize="20dp">
+
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/amount_of_annual_income"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="15dp"
+                android:ems="10"
+                android:textColor="#000000"
+                android:background="#EEEEEE"
+                android:padding="8dp"
+                android:hint="Enter your Annual Income"
+
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/amount_of_daily_expenses"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="15dp"
+                android:ems="10"
+                android:textColor="#000000"
+                android:background="#EEEEEE"
+                android:padding="8dp"
+                android:hint="Enter your daily expenditure"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/amount_of_desired_saving"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="15dp"
+                android:ems="10"
+                android:textColor="#000000"
+                android:background="#EEEEEE"
+                android:padding="8dp"
+                android:hint="Enter your Desired Saving"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/expense_items"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="15dp"
+                android:ems="10"
+                android:textColor="#000000"
+                android:background="#EEEEEE"
+                android:padding="8dp"
+                android:hint="Create your expense list (Food, Utilities, Groceries..)"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:id="@+id/signup_btn"
+                android:layout_height="50dp"
+                android:background="#9501B6A5"
+                android:textColor="@color/white"
+                android:onClick="store"
+                android:text="Set Tracker"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>
